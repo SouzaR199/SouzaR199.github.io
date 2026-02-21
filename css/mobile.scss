@@ -1,0 +1,66 @@
+@media (max-width: $mobile-breakpoint) {
+      section {
+            h2 {
+                  font-size: 2em;
+            }
+
+            &.initial_banner {
+                  padding-top: 8rem !important;
+
+                  h2 {
+                        font-size: 1.5em;
+                  }
+            }
+
+            &.full-vh {
+                  padding: 2rem 1rem;
+                  min-height: 70vh;
+                  height: auto;
+            }
+
+            &.about_me {
+                  p {
+                        max-width: unset;
+                  }
+            }
+
+            &.skills {
+                  .habilidades {
+                        max-width: unset;
+
+                        div {
+                              width: 50%;
+
+                              h3 {
+                                    font-size: 1.5em;
+                              }
+
+                              ul {
+                                    li {
+                                          font-size: 18px;
+                                    }
+                              }
+                        }
+                  }
+            }
+
+            &.portifolio {
+                  .projetos {
+                        .card {
+                              min-width: unset;
+                              max-width: 100%;
+                        }
+                  }
+            }
+      }
+
+      .hero {
+            h1 {
+                  font-size: 1.8rem;
+            }
+
+            h2 {
+                  font-size: 1.3rem;
+            }
+      }
+}

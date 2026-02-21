@@ -1,0 +1,271 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-mobile {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+}
+.menu-mobile.active ul {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+.menu-mobile button {
+  background: #00d1b2;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.menu-mobile ul {
+  min-width: 250px;
+  position: fixed;
+  top: 4.5rem;
+  right: 1rem;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.menu-mobile ul li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.menu-mobile ul li:hover {
+  background-color: #00d1b2;
+}
+.menu-mobile ul li:hover a {
+  color: #ffffff;
+}
+.menu-mobile ul li a {
+  text-decoration: none;
+  color: #1e1e2f;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  background: #f1f1f1;
+}
+footer p {
+  font-size: 18px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+footer ul li {
+  font-size: 18px;
+}
+footer a {
+  text-decoration: none;
+  color: #1e1e2f;
+}
+
+section.full-vh {
+  height: 100vh;
+  padding: 4rem 2rem;
+}
+section.dark-theme {
+  background: #1e1e2f;
+  color: white;
+}
+section.initial_banner {
+  background: #1e1e2f;
+  color: white;
+  text-align: center;
+  justify-content: flex-start;
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+section.initial_banner .btn {
+  background: #00d1b2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+section.initial_banner .content h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+section.initial_banner .content h2 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+section.initial_banner .content p {
+  font-size: 18px;
+}
+section.about_me h2 {
+  font-size: 3rem;
+}
+section.about_me p {
+  max-width: 60%;
+  text-align: justify;
+  font-size: 18px;
+}
+section.about_me ul li {
+  font-size: 18px;
+  font-weight: bold;
+}
+section.skills h2 {
+  font-size: 3rem;
+}
+section.skills .habilidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+section.skills .habilidades div h3 {
+  font-size: 2.34em;
+  margin-top: 0;
+}
+section.skills .habilidades div ul {
+  padding-inline-start: 25px;
+}
+section.skills .habilidades div ul li {
+  font-size: 24px;
+}
+section.portifolio h2 {
+  font-size: 3rem;
+}
+section.portifolio .projetos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+section.portifolio .projetos .card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fafafa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-width: 430px;
+  max-width: 25%;
+}
+section.portifolio .projetos .card img {
+  width: 100%;
+  height: auto;
+}
+section.portifolio .projetos .card h3 {
+  margin: 1rem;
+}
+section.portifolio .projetos .card p {
+  margin: 0 1rem 1rem;
+}
+section.clients h2 {
+  font-size: 3rem;
+}
+section.clients ul li {
+  font-size: 18px;
+  font-weight: bold;
+}
+section.clients ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+section.testimonials h2 {
+  font-size: 3rem;
+}
+section.testimonials blockquote {
+  border-left: 4px solid #00d1b2;
+  padding-left: 1rem;
+  margin: 1rem 2rem;
+  font-style: italic;
+}
+section.testimonials blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #666;
+}
+
+.fixed_footer {
+  background: #00d1b2;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.fixed_footer p a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  section h2 {
+    font-size: 2em;
+  }
+  section.initial_banner {
+    padding-top: 8rem !important;
+  }
+  section.initial_banner h2 {
+    font-size: 1.5em;
+  }
+  section.full-vh {
+    padding: 2rem 1rem;
+    min-height: 70vh;
+    height: auto;
+  }
+  section.about_me p {
+    max-width: unset;
+  }
+  section.skills .habilidades {
+    max-width: unset;
+  }
+  section.skills .habilidades div {
+    width: 50%;
+  }
+  section.skills .habilidades div h3 {
+    font-size: 1.5em;
+  }
+  section.skills .habilidades div ul li {
+    font-size: 18px;
+  }
+  section.portifolio .projetos .card {
+    min-width: unset;
+    max-width: 100%;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
